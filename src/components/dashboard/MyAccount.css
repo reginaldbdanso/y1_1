@@ -1,0 +1,122 @@
+/* MyAccount.css */
+.profile-info {
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 63px 80px 103px;
+  font-family: Open Sans, -apple-system, Roboto, Helvetica, sans-serif;
+}
+
+@media (max-width: 991px) {
+  .profile-info {
+    padding: 20px;
+    margin-top: 16px;
+  }
+}
+
+.welcome-heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000;
+  margin: 0;
+}
+
+.section-heading {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  color: #000;
+  margin: -7px 0 0;
+}
+
+.user-details {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 40px;
+  color: #000;
+  margin-top: 33px;
+}
+
+.action-buttons {
+  display: flex;
+  margin-top: 44px;
+  gap: 37px;
+}
+
+@media (max-width: 991px) {
+  .action-buttons {
+    margin-top: 40px;
+  }
+}
+
+.button {
+  border: none;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 700;
+  min-height: 45px;
+  padding: 13px 59px;
+}
+
+.button-primary {
+  background-color: #0055b6;
+}
+
+.button-secondary {
+  background-color: #000;
+}
+
+@media (max-width: 991px) {
+  .button {
+    width: 100%;
+    padding: 10px 12px;
+  }
+}
+
+.form {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+}
+
+.form-row {
+  display: flex;
+  gap: 25px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+}
+
+.form-label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.form-input {
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  width: 100%;
+  height: 49px;
+  padding: 0 15px;
+}
+
+.save-button {
+  display: block;
+  width: 250px;
+  margin: 22px auto 0;
+  border-radius: 30px;
+  background-color: #0055b6;
+  color: #ffffff;
+  font-weight: 700;
+  padding: 13px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}

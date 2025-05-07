@@ -1,0 +1,85 @@
+.legalPage {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainContent {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 120px 20px 40px;
+}
+
+.legalTitle {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.legalIntro {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+.legalHighlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.highlightCard {
+  padding: 1.5rem;
+  background: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.highlightCard h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.highlightCard p {
+  color: #666;
+  line-height: 1.5;
+}
+
+.policySection {
+  margin-bottom: 40px;
+}
+
+.policySection p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+}
+
+.sectionTitle {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.policyList {
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.policyList li {
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.policyList li:last-child {
+  margin-bottom: 0;
+}

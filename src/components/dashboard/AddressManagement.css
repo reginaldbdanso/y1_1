@@ -1,0 +1,39 @@
+/* CSS file: AddressManagement.css */
+.address-details {
+  width: 79%;
+  border-radius: 10px;
+  background-color: #fff;
+  border: 1px solid #e4e4e4;
+  padding: 40px 79px 114px;
+}
+
+@media (max-width: 991px) {
+  .address-details {
+    width: 100%;
+    padding: 20px;
+  }
+}
+
+.user-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #000;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.edit-button {
+  display: inline-block;
+  width: 135px;
+  border-radius: 30px;
+  background-color: #000;
+  margin-top: 41px;
+  min-height: 45px;
+  padding: 13px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}

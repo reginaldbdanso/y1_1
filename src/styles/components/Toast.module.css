@@ -1,0 +1,106 @@
+.toastContainer {
+  position: fixed;
+  z-index: 9999;
+  padding: 4px;
+  width: 320px;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.toast {
+  position: relative;
+  min-height: 64px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+  padding: 8px;
+  border-radius: 4px;
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.1), 0 2px 15px 0 rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  max-height: 800px;
+  overflow: hidden;
+  font-family: sans-serif;
+  cursor: pointer;
+  direction: ltr;
+}
+
+.success {
+  background: #07bc0c;
+}
+
+.error {
+  background: #e74c3c;
+}
+
+.warning {
+  background: #f1c40f;
+}
+
+.info {
+  background: #3498db;
+}
+
+.progressBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+  animation: progress 3s linear forwards;
+}
+
+.top-right {
+  top: 1em;
+  right: 1em;
+  transition: transform .6s ease-in-out;
+  animation: toast-in-right .7s;
+}
+
+.top-left {
+  top: 1em;
+  left: 1em;
+  transition: transform .6s ease-in;
+  animation: toast-in-left .7s;
+}
+
+.bottom-right {
+  bottom: 1em;
+  right: 1em;
+  transition: transform .6s ease-in-out;
+  animation: toast-in-right .7s;
+}
+
+.bottom-left {
+  bottom: 1em;
+  left: 1em;
+  transition: transform .6s ease-in;
+  animation: toast-in-left .7s;
+}
+
+@keyframes toast-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes toast-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes progress {
+  from {
+    transform: scaleX(1);
+  }
+  to {
+    transform: scaleX(0);
+  }
+}

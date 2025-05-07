@@ -1,0 +1,506 @@
+.container {
+  background-color: #eef2f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px 0 179px;
+}
+
+.divider {
+  align-self: stretch;
+  min-height: 0px;
+  width: 99.9%;
+  border: 1px solid #d5d5d5;
+}
+
+.dividerTop {
+  composes: divider;
+  margin-top: 100px;
+}
+
+.dividerNormal {
+  composes: divider;
+  margin-top: 10px;
+}
+
+.breadcrumbSort {
+  display: flex;
+  width: 100%;
+  max-width: 70%;
+  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 9px 0 0 0px;
+}
+
+@media (max-width: 991px) {
+  .breadcrumbSort {
+    width: 70%;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.breadcrumb {
+  align-self: start;
+  display: flex;
+  gap: 12px;
+  color: #000;
+  font: 15px "Open Sans", sans-serif;
+}
+
+.breadcrumbItem {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 4px 14px;
+  font: 400 15px "Open Sans", sans-serif;
+}
+
+.breadcrumbItemBold {
+  composes: breadcrumbItem;
+  font-weight: 700;
+}
+
+.sortContainer {
+  display: flex;
+  gap: 5px;
+}
+
+.sortLabel {
+  color: #000;
+  flex-grow: 1;
+  margin: auto 0;
+  font: 500 15px "Open Sans", sans-serif;
+}
+
+.sortSelect {
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 4px 30px;
+  border: 1px solid #e4e4e4;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .sortSelect {
+    padding-left: 20px;
+  }
+}
+
+.mainGrid {
+  width: 100%;
+  max-width: 80%;
+  margin: 23px 0 -24px;
+}
+
+@media (max-width: 991px) {
+  .mainGrid {
+    max-width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+.gridContainer {
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+@media (max-width: 991px) {
+  .gridContainer {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  line-height: normal;
+  width: 40%;
+  margin-left: 0px;
+}
+
+@media (max-width: 991px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.sidebarContent {
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+  margin: 0% 5%;
+}
+
+@media (max-width: 991px) {
+  .sidebarContent {
+    margin-top: 33px;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+.categoriesSection {
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #000;
+  padding: 18px 16px 38px;
+  font: 500 15px "Open Sans", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .categoriesSection {
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.categoryTitle {
+  font: 700 15px "Open Sans", sans-serif;
+  margin-left: 24px;
+  margin-bottom: 10px;
+  margin-top: 15px;
+}
+
+@media (max-width: 991px) {
+  .categoryTitle {
+    margin-left: 10px;
+  }
+}
+
+.categoryDivider {
+  align-self: stretch;
+  margin-top: 0px;
+  height: 0px;
+  border: 1px solid #d5d5d5;
+}
+
+.categoryNav ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.categoryNav li {
+  list-style: none;
+}
+
+.categoryLink {
+  color: #666;
+  text-decoration: none;
+  font-family: Inter, sans-serif;
+  margin: 5px 0 0 24px;
+  padding-top: 0.5rem;
+  display: block;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.categoryLinkActive {
+  composes: categoryLink;
+  color: #000;
+  font-weight: 700;
+}
+
+.categoryLink:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 991px) {
+  .categoryLink {
+    margin-left: 10px;
+  }
+}
+
+.priceSection {
+  border-radius: 20px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #000;
+  padding: 18px 30px 38px;
+  font: 500 15px "Open Sans", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .priceSection {
+    width: 100%;
+    padding: 18px 20px 38px;
+  }
+}
+
+.filterTitle {
+  font: 700 15px "Open Sans", sans-serif;
+  margin-bottom: 20px;
+}
+
+.priceRangeContainer {
+  align-self: stretch;
+  display: flex;
+  gap: 20px;
+  color: #000;
+  white-space: nowrap;
+  margin-top: -10px;
+  justify-content: space-between;
+  font: 500 15px "Open Sans", sans-serif;
+  width: 100%;
+}
+
+.priceRange {
+  border-radius: 10px;
+  background-color: #eef2f4;
+  padding: 10px 15px;
+  flex: 1;
+  text-align: center;
+  border: none;
+  width: 80px;
+}
+
+.priceRangeText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brandName {
+  color: #000;
+  margin-top: 24px;
+  font: 700 15px "Open Sans", sans-serif;
+}
+
+.brandSelect {
+  border-radius: 10px;
+  background-color: #eef2f4;
+  align-self: stretch;
+  display: flex;
+  margin-top: 5px;
+  gap: 20px;
+  color: #000;
+  justify-content: space-between;
+  padding: 10px 13px;
+  font: 500 15px "Open Sans", sans-serif;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .brandSelect {
+    padding-left: 20px;
+  }
+}
+
+.sortTitle {
+  color: #000;
+  margin-top: 20px;
+  font: 700 15px "Open Sans", sans-serif;
+}
+
+.sortOptions {
+  border-radius: 10px;
+  background-color: #eef2f4;
+  align-self: stretch;
+  display: flex;
+  margin-top: 5px;
+  gap: 20px;
+  color: #000;
+  justify-content: space-between;
+  padding: 10px 13px;
+  font: 500 15px "Open Sans", sans-serif;
+  width: 100%;
+  border: none;
+  cursor: pointer;
+}
+
+.conditionsTitle {
+  color: #000;
+  margin-top: 25px;
+  margin-bottom: -5px;
+  font: 700 15px "Open Sans", sans-serif;
+}
+
+.conditionOption {
+  display: flex;
+  margin-top: 14px;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+  white-space: nowrap;
+  justify-content: start;
+  font: 500 15px "Open Sans", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .conditionOption {
+    white-space: initial;
+  }
+}
+
+.checkbox {
+  border-radius: 5px;
+  align-self: stretch;
+  width: 17px;
+  height: 16px;
+  margin: auto 0;
+  border: 1px solid #afafaf;
+  cursor: pointer;
+}
+
+.conditionLabel {
+  align-self: stretch;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.productsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 70%;
+}
+
+@media (max-width: 991px) {
+  .productsGrid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 5px;
+    align-self: center;
+    margin-top: 20px;
+    max-width: 95%;
+  }
+}
+
+.noProductsMessage {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 40px;
+  font-size: 16px;
+  color: #666;
+}
+
+.resetFiltersButton {
+  background-color: #333;
+  color: white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.2s;
+}
+
+.resetFiltersButton:hover {
+  background-color: #000;
+}
+
+.filterCount {
+  display: inline-block;
+  background-color: #000;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.clearFiltersButton {
+  background-color: transparent;
+  color: #666;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 8px 15px;
+  margin-top: 10px;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+.clearFiltersButton:hover {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 10px;
+}
+
+.pageButton {
+  padding: 8px 16px;
+  border-radius: 8px;
+  border: 1px solid #d5d5d5;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  font-family: "Open Sans", sans-serif;
+  transition: all 0.2s ease;
+}
+
+.pageButtonActive {
+  composes: pageButton;
+  border-color: #080808;
+  background-color: #080808;
+  color: #fff;
+}
+
+.pageButton:hover {
+  background-color: #f0f0f0;
+}
+
+.pageButtonActive:hover {
+  background-color: #080808;
+}
+
+.pageButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.itemsPerPageContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.itemsPerPageLabel {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+}
+
+.itemsPerPageSelect {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #d5d5d5;
+}
+

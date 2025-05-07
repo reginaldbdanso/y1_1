@@ -1,0 +1,223 @@
+.header {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 20px;
+  background-color: #f2f2f2;
+  display: flex;
+  width: 80%;
+  overflow: visible;
+  gap: 20px;
+  justify-content: space-between;
+  padding: 21px 68px;
+  box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.147);
+  z-index: 1000;
+  margin: 0 auto;
+}
+
+.logo {
+  aspect-ratio: 4.13;
+  object-fit: contain;
+  object-position: center;
+  width: 132px;
+  max-width: 100%;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  color: #000;
+  justify-content: start;
+  margin: auto 0;
+  font: 500 14px Open Sans, sans-serif;
+}
+
+.navLink {
+  align-self: stretch;
+  margin: auto 0;
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.userActions {
+  align-self: center;
+  display: flex;
+  margin-top: 4px;
+  align-items: center;
+  gap: 30px;
+  order: 2;
+}
+
+.actionIcon {
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+  width: 24px;
+  cursor: pointer;
+}
+
+.cartWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.cartNotification {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #ff4444;
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 5px;
+  z-index: 1001;
+}
+
+.hamburgerLine {
+  width: 25px;
+  height: 3px;
+  background-color: #000;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 991px) {
+  .header {
+    width: 100%;
+    padding: 15px 20px;
+    top: 10px;
+    border-radius: 0;
+  }
+
+  .nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    flex-direction: column;
+    background-color: #f2f2f2;
+    height: 100vh;
+    width: 250px;
+    padding: 80px 20px;
+    gap: 50px;
+    transition: right 0.3s ease-in-out;
+  }
+
+  .navOpen {
+    right: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .hamburger {
+    display: block;
+    order: 1;
+  }
+
+  .hamburgerOpen .hamburgerLine:first-child {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .hamburgerOpen .hamburgerLine:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburgerOpen .hamburgerLine:last-child {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .userActions {
+    order: 0;
+    margin-right: -10px;
+  }
+}
+
+.logoutButton {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logoutButton:hover {
+  opacity: 0.8;
+}
+
+.logoutButton img {
+  width: 28px; /* Slightly bigger than the standard actionIcon */
+  height: 28px;
+  aspect-ratio: 1;
+  object-fit: contain;
+  object-position: center;
+}
+
+.userProfileContainer {
+  position: relative;
+  display: inline-block;
+}
+
+.userProfileButton {
+  border: 1px solid #000;
+  background: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.userProfileButton:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  margin-top: 8px;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  min-width: 150px;
+}
+
+.dropdownItem {
+  display: block;
+  width: 100%;
+  padding: 12px 16px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 14px;
+  color: #000;
+  transition: background-color 0.2s ease;
+}
+
+.dropdownItem:hover {
+  background-color: #f5f5f5;
+}
+
+.dropdownItem:not(:last-child) {
+  border-bottom: 1px solid #e0e0e0;
+}

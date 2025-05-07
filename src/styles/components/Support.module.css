@@ -1,0 +1,168 @@
+.container {
+  background-color: #eef2f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.mainContent {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: stretch;
+  padding: 21px 0 179px;
+}
+
+.divider {
+  align-self: stretch;
+  min-height: 0px;
+  width: 99.9%;
+  border: 1px solid #d5d5d5;
+}
+
+.dividerTop {
+  composes: divider;
+  margin-top: 100px;
+}
+
+.dividerNormal {
+  composes: divider;
+  margin-top: 10px;
+}
+
+.breadcrumbSort {
+  display: flex;
+  width: 100%;
+  max-width: 70%;
+  gap: 2px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 9px 0 0 0px;
+}
+
+@media (max-width: 991px) {
+  .breadcrumbSort {
+    width: 70%;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+
+.breadcrumb {
+  align-self: start;
+  display: flex;
+  gap: 12px;
+  color: #000;
+  font: 15px Open Sans, sans-serif;
+}
+
+.breadcrumbItem {
+  align-self: stretch;
+  border-radius: 10px;
+  background-color: #fff;
+  padding: 4px 14px;
+  font: 400 15px Open Sans, sans-serif;
+}
+
+.breadcrumbItemBold {
+  composes: breadcrumbItem;
+  font-weight: 700;
+}
+
+.orderSection {
+  text-align: center;
+  margin-top: 50px;
+  display: flex;
+  width: 100%;
+  max-width: 80%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .orderSection {
+    margin-top: 80px;
+    max-width: 100%;
+  }
+}
+
+.sectionTitle {
+  font-size: 25px;
+  font-weight: 700;
+  width: 50%;
+  margin-bottom: 13px;
+}
+
+.orderImage {
+  aspect-ratio: 3.13;
+  width: 100%;
+  max-width: 90%;
+  margin-bottom: 26px;
+}
+
+@media (max-width: 991px) {
+  .orderImage {
+    aspect-ratio: 2.5;
+  }
+}
+
+.orderForm {
+  align-self: center;
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  width: 50%;
+  margin-top: -60px;
+  font-size: 15px;
+  color: #000;
+  white-space: nowrap;
+}
+
+@media (max-width: 991px) {
+  .orderForm {
+    max-width: 100%;
+    padding-left: 20px;
+    white-space: initial;
+  }
+}
+
+.orderInput {
+  align-self: stretch;
+  padding: 0 10px;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #000;
+  white-space: nowrap;
+}
+
+.orderButton {
+  align-self: end;
+  background-color: #c0ddff;
+  padding: 11px 39px;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .orderButton {
+    white-space: initial;
+    padding: 0 20px;
+  }
+}
+
+.orderInfo {
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .orderInfo {
+    margin-bottom: 30%;
+  }
+}

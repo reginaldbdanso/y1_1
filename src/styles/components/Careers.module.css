@@ -1,0 +1,177 @@
+.careersContainer {
+  display: flex;
+  padding-top: 21px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.mainContent {
+  width: 100%;
+  max-width: 80%;
+  margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .mainContent {
+    padding-left: 20px;
+    padding-right: 20px;
+    max-width: 95%;
+  }
+}
+
+.pageTitle {
+  color: #000;
+  text-align: center;
+  font-size: 36px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 800;
+  line-height: 1;
+  margin-top: 46px;
+  margin-bottom: 0;
+}
+
+.pageDescription {
+  text-align: center;
+  color: #000;
+  font-size: 16px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  font-weight: 300;
+  line-height: 2;
+  margin-top: 12px;
+}
+
+.jobStats {
+  display: flex;
+  margin-top: 42px;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-around;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  color: #000;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .jobStats {
+    margin-top: 40px;
+    flex-wrap: wrap;
+  }
+}
+
+.totalJobs {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 0;
+}
+
+.jobTypes {
+  display: flex;
+  gap: 57px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.jobListings {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+  align-self: center;
+  align-items: start;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 45px;
+  padding-bottom: 80px;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .jobListings {
+    margin-top: 40px;
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+}
+
+.jobCard {
+  flex: 1;
+  min-width: 300px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 8px;
+  font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
+  box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.100);
+  width: 100%;
+}
+
+.jobImageContainer {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  aspect-ratio: 1.718;
+  width: 100%;
+}
+
+.jobImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.statusBadge {
+  position: absolute;
+  top: 6px;
+  left: 8px;
+  border-radius: 20px;
+  padding: 4px 22px;
+  font-size: 12px;
+  color: #fcfcfc;
+  font-weight: 500;
+}
+
+.statusBadgeOpen {
+  composes: statusBadge;
+  background-color: #0055b6;
+}
+
+.statusBadgeClosed {
+  composes: statusBadge;
+  background-color: #000;
+}
+
+.jobDetails {
+  display: flex;
+  margin-top: 9px;
+  padding: 0 20px;
+  padding-bottom: 50px;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.jobTitle {
+  color: #000;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.jobType {
+  color: #010101;
+  font-size: 12px;
+  font-weight: 400;
+  margin: 7px 0 0;
+}
+
+.applyButton {
+  border: none;
+  border-radius: 20px;
+  background-color: #0055b6;
+  padding: 7px 19px;
+  font-size: 12px;
+  color: #fffbfb;
+  cursor: pointer;
+}
+
+.applyButton:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}

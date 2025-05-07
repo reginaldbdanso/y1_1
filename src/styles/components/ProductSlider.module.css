@@ -1,0 +1,118 @@
+.sliderSection {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.sectionTitle {
+  color: #000;
+  font: 700 25px Open Sans, sans-serif;
+  margin-bottom: 20px;
+}
+
+.sliderContainer {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e4e4e4;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 20px;
+  color: #000;
+  transition: all 0.3s ease;
+}
+
+.arrow:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.arrowLeft {
+  composes: arrow;
+  left: 0;
+}
+
+.arrowRight {
+  composes: arrow;
+  right: 0;
+}
+
+@media (max-width: 991px) {
+  .arrow {
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+  }
+}
+
+.productsContainer {
+  display: flex;
+  gap: 15px;
+  transition: transform 0.5s ease;
+  padding: 0;
+  margin: 0;
+  height: auto;
+}
+
+.productsContainer::-webkit-scrollbar {
+  height: 5px;
+}
+
+.productsContainer::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.productsContainer::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.productsContainer::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media (max-width: 991px) {
+  .productsContainer {
+    gap: 10px;
+  }
+}
+
+.productSlide {
+  flex: 0 0 auto;
+  width: calc(25% - 15px);
+  transition: transform 0.3s ease;
+}
+
+.productSlide:hover {
+  transform: translateY(-5px);
+}
+
+@media (max-width: 1200px) {
+  .productSlide {
+    width: calc(33.333% - 15px);
+  }
+}
+
+@media (max-width: 768px) {
+  .productSlide {
+    width: calc(50% - 15px);
+  }
+}
+
+@media (max-width: 480px) {
+  .productSlide {
+    width: calc(100% - 15px);
+  }
+}

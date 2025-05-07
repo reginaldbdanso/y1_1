@@ -1,0 +1,9 @@
+.qodo
+node_modules
+cool-beanbag-439522-a0-04ed69f33420.json
+.env
+package-lock.json
+.bolt
+build
+dist
+.DS_Store

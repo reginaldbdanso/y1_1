@@ -1,0 +1,144 @@
+.contentSection {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media (max-width: 991px) {
+  .contentSection {
+    max-width: 95%;
+  }
+}
+
+.sectionTitle {
+  color: #000;
+  font: 700 25px Open Sans, sans-serif;
+  margin-bottom: 20px;
+}
+
+.specsList {
+  color: #000;
+  font: 500 15px Open Sans, sans-serif;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.featureDescription {
+  color: #000;
+  font: 500 15px Open Sans, sans-serif;
+  margin-bottom: 30px;
+}
+
+.featureDescription strong {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.reviewsContainer {
+  display: flex;
+  width: 100%;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+@media (max-width: 991px) {
+  .reviewsContainer {
+    flex-direction: column;
+  }
+}
+
+.ratingSummary {
+  flex: 1;
+}
+
+.ratingScore {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.ratingScore span {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.ratingScore img {
+  height: 30px;
+}
+
+.ratingBars {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ratingBar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ratingBar span {
+  min-width: 20px;
+}
+
+.barContainer {
+  flex: 1;
+  height: 15px;
+  background-color: #E4E4E4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.barFill {
+  height: 100%;
+  background-color: #FFC107;
+  border-radius: 10px;
+  transition: width 0.3s ease;
+}
+
+.reviewCard {
+  background-color: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #E4E4E4;
+}
+
+.reviewRating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.reviewTitle {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.reviewStars {
+  display: flex;
+  gap: 5px;
+}
+
+.reviewStars img {
+  height: 20px;
+}
+
+.reviewText {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.reviewAuthor {
+  font-size: 12px;
+  color: #666;
+  margin: 0;
+}

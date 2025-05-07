@@ -1,0 +1,192 @@
+.contactPage {
+  background-color: #fff;
+  display: flex;
+  padding-top: 21px;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.mainSection {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 21px 0 100px;
+}
+
+.pageTitle {
+  color: #000;
+  font-size: 80px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+@media (max-width: 991px) {
+  .pageTitle {
+    margin-top: 80px;
+    font-size: 40px;
+  }
+}
+
+.contactContent {
+  margin-top: 36px;
+  width: 100%;
+  max-width: 50%;
+  display: flex;
+  gap: 20px;
+}
+
+@media (max-width: 991px) {
+  .contactContent {
+    max-width: 80%;
+    align-self: center;
+    flex-direction: column-reverse;
+  }
+}
+
+.contactInfo {
+  width: 34%;
+  font-family: "Inter", sans-serif;
+  font-size: 13px;
+  color: #000;
+  font-weight: 300;
+  line-height: 2;
+}
+
+@media (max-width: 991px) {
+  .contactInfo {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.infoBlock {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.infoBlockMargin {
+  composes: infoBlock;
+  margin-top: 46px;
+}
+
+.infoBlockLargeMargin {
+  composes: infoBlock;
+  margin-top: 60px;
+}
+
+@media (max-width: 991px) {
+  .infoBlockLargeMargin {
+    margin-top: 40px;
+  }
+}
+
+.infoIcon {
+  width: 19px;
+  height: 19px;
+  object-fit: contain;
+}
+
+.contactForm {
+  width: 66%;
+  font-family: "Inter", sans-serif;
+}
+
+@media (max-width: 991px) {
+  .contactForm {
+    width: 100%;
+    margin-top: 40px;
+  }
+}
+
+.formGroup {
+  margin-bottom: 31px;
+}
+
+.formLabel {
+  color: #010101;
+  font-size: 9px;
+  font-weight: 400;
+}
+
+.formInput {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 8px;
+  margin-bottom: 0px;
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+}
+
+.formInput::placeholder {
+  color: rgb(172, 167, 167);
+}
+
+.inputUnderline {
+  width: 100%;
+  max-width: 350px;
+}
+
+.formRow {
+  display: flex;
+  gap: 30px;
+}
+
+.messageText {
+  color: #000;
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 15px;
+  margin-top: 8px;
+  border: none;
+  margin-right: 25px;
+  width: 100%;
+  outline: none;
+  background: transparent;
+  font-family: "Inter", sans-serif;
+  resize: vertical;
+  min-height: 80px;
+}
+
+.messageText::placeholder {
+  color: rgb(172, 167, 167);
+}
+
+@media (max-width: 991px) {
+  .messageText {
+    margin-right: 10px;
+  }
+}
+
+.formUnderline {
+  width: 100%;
+  max-width: 100%;
+}
+
+.submitButton {
+  border-radius: 30px;
+  background-color: #0055b6;
+  margin-top: 56px;
+  width: 250px;
+  padding: 13px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  color: #ffffff;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+}
+
+@media (max-width: 991px) {
+  .submitButton {
+    margin-top: 40px;
+  }
+}
